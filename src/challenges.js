@@ -67,8 +67,23 @@ const catAndMouse = (mouse, cat1, cat2) => {
           return `cat2`
       } else { return `os gatos trombam e o rato foge` }
   }
-  
+
 // Desafio 8 - Crie a função fizzBuzz
+
+const fizzBuzz = (numberArray) =>{
+  let result = [];
+  for(let index =0; index < numberArray.length; index+=1){
+      result[index]='';
+      if (numberArray[index]%3===0 && numberArray[index]%5===0){
+          result[index]='fizzBuzz';
+      } else if (numberArray[index]%3===0){
+          result[index]='fizz';
+      } else if (numberArray[index]%5===0){
+          result[index]='buzz';
+      } else {result[index]='bug!';}
+  }
+return result;
+}
 
 // Desafio 9 - Crie a função encode e a função decode
 
