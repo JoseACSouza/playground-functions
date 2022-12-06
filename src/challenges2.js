@@ -35,6 +35,14 @@ return `(${phoneArray[0]}${phoneArray[1]}) ${fourthNumber.join('')}-${lastNumber
 
 // Desafio 12 -  Crie a função triangleCheck
 
+const triangleCheck= (lineA, lineB, lineC) =>{
+  if(((lineA < lineB + lineC)&& lineA > Math.abs(lineB-lineC))||((lineB < lineA + lineC)&& lineB > Math.abs(lineA-lineC))||((lineC < lineB + lineA)&& lineC > Math.abs(lineB-lineA))){
+      return true;
+  } else if ((lineA < lineB + lineC)&&(lineB < lineA + lineC)&&(lineC < lineB + lineA)){
+      return true;
+  } else {return false}
+}
+
 // Desafio 13 - Crie a função hydrate
 
 /* eslint no-undef: 0 */
