@@ -13,8 +13,24 @@ const splitSentence = (sentence) => {
 const concatName = (array) => `${array[array.length-1]}, ${array[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
+const footballPoints = (wins, tie) => (wins*3)+tie;
 
 // Desafio 5 - Crie a função highestCount
+const highestCount = (numbers) =>{
+  let highestNumber = Number.NEGATIVE_INFINITY;
+  let repetition = 0;
+  for(let index = 0; index < numbers.length; index += 1){
+      if(numbers[index] >= highestNumber){
+          highestNumber = numbers[index];
+      }
+  }
+  for(let index = 0; index < numbers.length; index += 1){
+      if(numbers[index] == highestNumber){
+          repetition += 1;
+      }
+  }
+return repetition;    
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
