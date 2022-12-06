@@ -10,6 +10,7 @@ const splitSentence = (sentence) => {
   return splitedSentence; 
 }
 // Desafio 3 - Crie a função concatName
+const concatName = (array) => `${array[array.length-1]}, ${array[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 
