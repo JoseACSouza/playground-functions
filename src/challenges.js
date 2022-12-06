@@ -87,6 +87,45 @@ return result;
 
 // Desafio 9 - Crie a função encode e a função decode
 
+const encode = (string) =>{
+  let splitedString = string.split('')
+  let result = [];
+  for(let index = 0; index < string.length; index += 1 ){
+      result[index] = '';
+      if(splitedString[index] == 'a'){
+          result[index] = 1;
+      } else if(splitedString[index] == 'e'){
+          result[index] = 2;
+      } else if(splitedString[index] == 'i'){
+          result[index] = 3;
+      } else if(splitedString[index] == 'o'){
+          result[index] = 4;
+      } else if(splitedString[index] == 'u'){
+          result[index] = 5;
+      } else {result[index] = splitedString[index]}
+  }
+return result.join('')
+}
+const decode = (string) =>{
+  let splitedString = string.split('')
+  let result = [];
+  for(let index = 0; index < string.length; index += 1 ){
+      result[index] = '';
+      if(splitedString[index] == '1'){
+          result[index] = 'a';
+      } else if(splitedString[index] == '2'){
+          result[index] = 'e';
+      } else if(splitedString[index] == '3'){
+          result[index] = 'i';
+      } else if(splitedString[index] == '4'){
+          result[index] = 'o';
+      } else if(splitedString[index] == '5'){
+          result[index] = 'u';
+      } else {result[index] = splitedString[index]}
+  }
+return result.join('')
+}
+
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
