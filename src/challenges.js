@@ -128,6 +128,17 @@ return result.join('')
 
 // Desafio 10 - Crie a função techList
 
+const techList = (array, string) =>{
+  let list = [];
+  for(let index = 0; index < array.length; index += 1){
+      list[index]={
+          tech: array[index],
+          name: string,
+      }
+  }
+return list;
+}
+
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
