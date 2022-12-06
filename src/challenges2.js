@@ -45,6 +45,27 @@ const triangleCheck= (lineA, lineB, lineC) =>{
 
 // Desafio 13 - Crie a função hydrate
 
+const hydrate = (string) =>{
+  let sumArray = [];
+  let result = 0;
+  let stringToArray = string.match(/\d+/g);
+  for(let index = 0; index < stringToArray.length; index+=1){
+      sumArray.push(parseInt(stringToArray[index]))
+  }
+  for(let index = 0; index < sumArray.length; index+=1){
+      if(sumArray[index] > 9 || sumArray[index] < 0){
+          return `erro`;
+      } else {
+          result += sumArray[index];
+      }
+  }
+  if(result===1) {
+      return `${result} copo de água`;
+  } else{
+  return `${result} copos de água`;
+  }
+}
+
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
