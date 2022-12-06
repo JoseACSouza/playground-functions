@@ -132,7 +132,7 @@ const techList = (array, string) =>{
   let list = [];
   for(let index = 0; index < array.length; index += 1){
       list[index]={
-          tech: array[index],
+          tech: array.sort()[index],
           name: string,
       }
   }
