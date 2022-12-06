@@ -46,6 +46,28 @@ const calcAllAreas = (base, height, form)=>{
 
 // Desafio 7 - Crie a função catAndMouse
 
+const catAndMouse = (mouse, cat1, cat2) => {
+  let position = [0,0]; // position[0] = cat1, position[1] = cat2 
+      if ((mouse >= cat1) && (mouse >= cat2)){
+          position[0] = mouse-cat1;
+          position[1] = mouse-cat2;
+      } else if((mouse <= cat1) && (mouse <= cat2)){
+          position[0] = cat1-mouse;
+          position[1] = cat2-mouse;
+      } else if((mouse >= cat1) && (mouse <= cat2)){
+          position[0] = mouse-cat1;
+          position[1] = cat2-mouse;
+      } else if((mouse <= cat1) && (mouse >= cat2)){
+          position[0] = cat1-mouse;
+          position[1] = mouse-cat1;
+      }
+      if (position[0] < position[1]){
+          return `cat1`
+      } else if (position[1] < position[0]){
+          return `cat2`
+      } else { return `os gatos trombam e o rato foge` }
+  }
+  
 // Desafio 8 - Crie a função fizzBuzz
 
 // Desafio 9 - Crie a função encode e a função decode
