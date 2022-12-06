@@ -1,5 +1,9 @@
 // Desafio 1 - Crie a função compareTrue
-
+const compareTrue = (animal1, animal2) => {
+  if (animal1 === true && animal2 === true){
+      return true;
+  } else {return false};
+}
 // Desafio 2 - Crie a função splitSentence
 
 // Desafio 3 - Crie a função concatName
