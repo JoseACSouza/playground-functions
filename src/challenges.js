@@ -5,7 +5,10 @@ const compareTrue = (animal1, animal2) => {
   } else {return false};
 }
 // Desafio 2 - Crie a função splitSentence
-
+const splitSentence = (sentence) => {
+  const splitedSentence = sentence.split(' ');
+  return splitedSentence; 
+}
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
