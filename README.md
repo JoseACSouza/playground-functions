@@ -1,10 +1,3 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+"Implementar o código de funções que resolvem problemas com respostas pré-determinadas. Utilizando a lógica de programação para ajudar na análise de cada problema e resposta esperada, facilitando a implementação do código de cada uma das funções.", \
+stacks: ["JavaScript"],\
+instructions: "Para testar em sua máquina, clone o repositório, instale as dependencias com 'npm install' e utilize algum code runner para testar se os objetivos foram atingidos",
